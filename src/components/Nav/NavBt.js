@@ -33,7 +33,6 @@ export class NavBt extends Component {
     };
 
     mouseLeave = () => {
-        console.log(this.state.location);
         if(this.state.location !== this.props.path) this.setState({color: this.state.color1});
     };
 
@@ -55,7 +54,7 @@ export class NavBt extends Component {
                         onClick={this.mouseEnter}
                         to={this.props.path}
                         smooth="true"
-                         > {this.props.name} </Link>  
+                        > {this.props.name} </Link>  
                 </div>
             </div>
         )

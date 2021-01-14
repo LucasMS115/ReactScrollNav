@@ -13,6 +13,7 @@ export class NavBt extends Component {
 
     divStyle = () => {
         return{
+            display: 'flex',
             margin: ".5rem",
             alignContent: "center",
             justifyContent: "center"

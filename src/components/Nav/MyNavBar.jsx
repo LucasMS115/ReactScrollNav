@@ -13,9 +13,13 @@ const Nav = styled.nav`
 
 const NavBar = () => {
   return (
+    <div style={{position: 'fixed'}}>
+      
       <Nav>
         <Burger />
       </Nav>
+
+    </div>
   )
 }
 

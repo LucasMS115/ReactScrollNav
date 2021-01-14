@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBt from './NavBt';
+import {Link} from 'react-router-dom';
 import {ReactComponent as Logo} from '../../assets/images/logo.svg';
 
 const Ul = styled.ul`
@@ -37,30 +38,39 @@ const Ul = styled.ul`
     
 `;
 
-const navBtnsContainer = {
-  display: "flex",
-  position: "absolute",
-  top: "1.5rem",
-  right: "1rem",
-  color:"white",
-  fontSize: "2.5rem"
+const navContainer = {
+  /* backgroundColor: "green", */
+  marginTop: '1rem',
+  padding: '.5rem',
+  color: 'white',
+  position: 'absolute',
+  right: '6rem'
+
 }
 
 const logoStyle = {
-  width: "9rem",
-  height: "9rem",
-  cursor: "pointer"
+  width: "6rem",
+  height: "6rem",
+  cursor: "pointer",
+  marginTop: ".3rem",
+}
+
+const barStyle = {
+  display:'flex',
+  width: '100vw',
+  padding: '.5rem'
 }
 
 const RightNav = ({ open }) => {
   return (
-    <div >
 
-      <a href='/'>
+    <div style={barStyle}>
+
+      {/* <Link to='/'> */}
         <Logo style={logoStyle}/>      
-      </a>
+      {/* </Link> */}
 
-      <div style={navBtnsContainer}>
+      <div style={navContainer}>
         <Ul open={open}>
             <NavBt path="Header" name="Header"/>
             <NavBt path="S1" name="Section-1"/>
@@ -70,7 +80,7 @@ const RightNav = ({ open }) => {
             <div className="side-menu">
               <div className="flex-container-column ">
                 <p style={{fontSize: "2rem"}}>Alguma Soisa</p>
-                <p >Something</p>
+                <p>Something</p>
                 <h2 >ANYTHING</h2>
               </div>
             </div>
@@ -78,6 +88,7 @@ const RightNav = ({ open }) => {
         </Ul>
 
       </div>
+
     </div>
   )
 }

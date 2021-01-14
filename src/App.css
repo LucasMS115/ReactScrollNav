@@ -1,0 +1,95 @@
+:root {
+    /* variables css*/
+    --color-main: #ffffff;
+
+    /*10 pixels (100% = 16 pixels)*/
+    font-size: 62.5%; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+.mobile-hidden{
+    visibility: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 90, 30);
+    height: 100vh;
+}
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(155, 124, 40);
+    height: 100vh;
+}
+
+.section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(90, 23, 90);
+    height: 100vh;
+}
+
+.section-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 2, 61);
+    height: 100vh;
+}
+
+@media (max-width: 699px) {
+    :root {
+        font-size: 40%;
+    }
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 60%;
+    }
+}
+
+@media (min-width: 769px) {
+    :root {
+        font-size: 60%;
+    }
+
+    .mobile-hidden{
+        visibility: visible;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    :root {
+        font-size: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        font-size: 75%;
+    }
+}
+
+@media (min-width: 2000px) {
+    :root {
+        font-size: 180%;
+    }
+}
